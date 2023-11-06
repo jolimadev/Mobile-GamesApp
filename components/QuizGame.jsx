@@ -130,8 +130,7 @@ const QuizGame = () => {
 
   return (
     <>
-      <Text style={styles.textTitle}> Volver a Logic Games🎮</Text>
-
+   
       <View style={styles.container}>
         {renderizarQuiz()}
         {renderizarExplicacion()}
@@ -139,9 +138,16 @@ const QuizGame = () => {
         {showExplanation ? null : (
           //Esta opcion va a ser muy buena para escoger imagenes de la tematica del quiz
           <ImageBackground
-            source={require("../assets/images/bgimg.png")}
-            style={styles.backgroundImage}
-          ></ImageBackground>
+          source={require("../assets/images/bgimg.png")}
+          style={{
+            flex: 0,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
+        />
         )}
       </View>
     </>
@@ -197,13 +203,14 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   backgroundImage: {
-    ...StyleSheet.absoluteFillObject, //si comento esta linea se estira el contenedor de preguntas, pero tapa la imagen
+    ...StyleSheet.absoluteFillObject,
     resizeMode: "cover",
     justifyContent: "center",
     width: 350,
-    height: 150,
-    marginTop: 530,
+    height: 640,
+    marginTop: 30,
     marginLeft: 20,
+    // backgroundColor: "#8033FF",
   },
 });
 

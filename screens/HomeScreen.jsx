@@ -1,34 +1,61 @@
 import React from "react";
-import { View, Text, StyleSheet, ImageBackground, Button} from "react-native";
+import { View, Text, StyleSheet, ImageBackground, TouchableOpacity } from "react-native";
+
+
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <ImageBackground
         source={require("../assets/images/bgimg.png")}
-        style={styles.backgroundImage}
-      ></ImageBackground>
-      <Text>🎮Welcolme to Logic Games🧠</Text>
-      <Button style={{ backgroundColor:'yellow'}}
-        title="Play to Start"
-        onPress={() => navigation.navigate("GamesList")}
+        style={{
+          flex: 0,
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: "100%",
+        }}
       />
+       <Text style={styles.title}>WELCOME TO LOGIC GAMES</Text>
+      <View style={styles.container}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("GamesList")}>
+          <Text style={{ color: "#ffffff" }}>Play to Start</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
 
-export default HomeScreen;
-
 const styles = StyleSheet.create({
-
   backgroundImage: {
-    ...StyleSheet.absoluteFillObject, //si comento esta linea se estira el contenedor de preguntas, pero tapa la imagen
+    ...StyleSheet.absoluteFillObject,
     resizeMode: "cover",
     justifyContent: "center",
-    width: 350,
-    height: 240,
-    marginTop: 430,
-    marginLeft: 20,
-    backgroundColor: "#8033FF",
+    width: "100%",
+  },
+  container: {
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "#ffffff",
+  },
+  button: {
+    backgroundColor: "purple",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+    fontSize: 16,
+    width: 110,
+    height: 40,
   },
 });
+
+export default HomeScreen;

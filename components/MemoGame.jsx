@@ -182,8 +182,7 @@ const MemoGame = () => {
 
   return (
     <>
-      <Text style={styles.textTitle}> Volver a List Games 🎮</Text>
-      <View style={styles.container}>
+       <View style={styles.container}>
         <Text style={styles.scoreText}>
           SCORE: <Text style={styles.scoreValue}>{score}</Text>
         </Text>
