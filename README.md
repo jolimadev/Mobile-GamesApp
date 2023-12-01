@@ -36,6 +36,15 @@ Si quieres contribuir a este proyecto, por favor, sigue estos pasos:
 ## Licencia
 
 Este proyecto es de código abierto y está disponible bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE]
+<h2>IMAGENES DE AVANCE: </h2>
+
+![HomescreenDemo](https://github.com/jolimadev/Mobile-GamesApp/assets/84105167/844b37ba-5ba6-4a26-814a-0f2be97d0acb)
+
+![ListGameScreen](https://github.com/jolimadev/Mobile-GamesApp/assets/84105167/4a66a45b-af69-49e3-b31b-ee3398c5937c)
+
+![exampleGame2](https://github.com/jolimadev/Mobile-GamesApp/assets/84105167/59ddf6c8-e65a-4409-a2bc-547ffa523991)
+
+![exampleGame](https://github.com/jolimadev/Mobile-GamesApp/assets/84105167/18c6931b-6d79-4b67-b1c4-d91e5197d683)
 
 <br>
 <hr>
