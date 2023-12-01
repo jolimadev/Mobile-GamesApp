@@ -1,16 +1,35 @@
 import React from "react";
-import { View, Text, Button } from 'react-native';
-import QuizGame from '../components/QuizGame';
-
+import { View, Text, Button, StyleSheet } from "react-native";
+import QuizGame from "../components/QuizGame";
 
 const Game1Screen = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View style={styles.container}>
       <QuizGame />
-      <Button title="Back to Game's List" onPress={() => navigation.goBack()} />
-      <Button title="Go back to Home" onPress={() => navigation.popToTop()} />
+
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Back to Game's List"
+          onPress={() => navigation.goBack()}
+        />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button title="Go back to Home" onPress={() => navigation.popToTop()} />
+      </View>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#F0F0F0", // Color de bg
+  },
+  buttonContainer: {
+    marginVertical: 10,
+  },
+});
 
 export default Game1Screen;

@@ -138,15 +138,15 @@ const QuizGame = () => {
         {showExplanation ? null : (
           //Esta opcion va a ser muy buena para escoger imagenes de la tematica del quiz
           <ImageBackground
-          source={require("../assets/images/bgimg.png")}
-          style={{
-            flex: 0,
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-          }}
+          // source={require("../assets/images/bgimg.png")}
+          // style={{
+          //   flex: 0,
+          //   position: "absolute",
+          //   top: 0,
+          //   left: 0,
+          //   right: 0,
+          //   bottom: 0,
+          // }}
         />
         )}
       </View>
@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   container: {
     padding: 40,
-    backgroundColor: "#8033FF",
+    backgroundColor: "#F0F0F0",
   },
 
   text: {
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
   },
   opcion: {
-    backgroundColor: "#53269C ",
+    backgroundColor: "#3498db",
     padding: 20,
     marginVertical: 15,
     borderRadius: 5,
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
   containerExplicacion: {
     padding: 20,
     marginBottom: 40,
-    backgroundColor: "#53269C",
+    backgroundColor: "#3498db",
     color: "#fff",
   },
   explicacion: {
@@ -202,16 +202,16 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     marginBottom: 10,
   },
-  backgroundImage: {
-    ...StyleSheet.absoluteFillObject,
-    resizeMode: "cover",
-    justifyContent: "center",
-    width: 350,
-    height: 640,
-    marginTop: 30,
-    marginLeft: 20,
-    // backgroundColor: "#8033FF",
-  },
+  // backgroundImage: {
+  //   ...StyleSheet.absoluteFillObject,
+  //   resizeMode: "cover",
+  //   justifyContent: "center",
+  //   width: 350,
+  //   height: 640,
+  //   marginTop: 30,
+  //   marginLeft: 20,
+  //   // backgroundColor: "#F0F0F0",
+  // },
 });
 
 export default QuizGame;

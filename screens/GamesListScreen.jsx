@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { StyleSheet, TouchableOpacity, View, Button, Text, ImageBackground } from "react-native";
-
-
-
+import {
+  StyleSheet,
+  TouchableOpacity,
+  View,
+  Button,
+  Text,
+  ImageBackground,
+} from "react-native";
 
 const GamesListScreen = ({ navigation }) => {
-  
-
   const handleOnPress = (selectedGame) => {
     navigation.navigate(selectedGame); // Navegar a la pantalla seleccionada
   };
@@ -42,8 +44,11 @@ const GamesListScreen = ({ navigation }) => {
         >
           <Text style={styles.buttonText}>Memo Game</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>3rd Game Coming Soon</Text>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => handleOnPress("Game3")}
+        >
+          <Text style={styles.buttonText}>Guess the Number</Text>
         </TouchableOpacity>
       </View>
     </React.Fragment>
@@ -68,7 +73,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
   },
   button: {
-    backgroundColor: "#53269C",
+    backgroundColor: "#3498db",
     padding: 16,
     marginVertical: 25,
     borderRadius: 4,

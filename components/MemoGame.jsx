@@ -206,12 +206,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#8033FF",
+    backgroundColor: "#F0F0F0",
     paddingHorizontal: 20,
   },
   scoreText: {
     fontSize: 25,
-    color: "#fff",
+    color: "#0c0c0c",
     marginBottom: 10,
   },
   scoreValue: {
